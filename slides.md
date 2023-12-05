@@ -1,7 +1,7 @@
 ---
 title: '**Communcication Our APIs:** Enhance Provider and Consumer Interaction'
 layout: intro
-theme: default
+theme: seriph
 ---
 
 ## **Communicating Our APIs:**
@@ -67,24 +67,24 @@ Source: Wikipedia, "API"​
 
 ---
 
-# Consumers / Providers
+# Communication Boundaries
 
 <br>
 
 - Private​ APIs
-  - Developers in the same team or same organisation​
+  - Provider and consumer are developers in the same team or same organisation​
 
 <br>
 
 - Partner Facing​ APIs
   - Serving partners (i.e.: Payment Service Providers)​
-  - Providers and consumers might not communicate directly
+  - Provider and consumer might not communicate directly
 
 <br>
 
 - Public APIs
   - Publicly available (i.e.. Geo-Location services)​
-  - Communication should scale
+  - Communication at scale: Many Consumers ↔ 1 Provider
 
 ---
 
@@ -116,10 +116,15 @@ Source: Postman, "2023 State of the API Report"​​​
 </div>
 
 ---
-layout: statement
+layout: center
 ---
 
-## **Enhancing API Discoverability**
+# Enhancing API Discoverability
+
+<div class="flex justify-center items-center h-full">
+<img src="/ibet.png" class="m-5 h-80 p-2 rounded bg-white" />
+</div>
+
 
 ---
 
@@ -236,6 +241,8 @@ components:
 - An adaptation of the OpenAPI specification
 - Written as JSON or YAML
 - Protocols: AMQP, HTTP, JMS, Kafka, but not only
+- [https://www.asyncapi.com/tools](https://www.asyncapi.com/tools)
+
 
 ---
 clicks: 5
@@ -300,7 +307,7 @@ components:
 
 <v-clicks at="0">
 
-- **Version:** Spec Version
+- **Asyncapi:** Spec Version
 - **Info:** Metadata information about the API
 - **Servers:** Connectivity information about servers (i.e. Kafka brokers)
 - **Channels:** Messages exchange between provider and consumer
@@ -312,11 +319,116 @@ components:
 
 </div>
 
+
 ---
-layout: statement
+layout: center
 ---
 
-## **Enhancing API development**
+<div class="flex justify-center items-center h-full">
+
+# Enhancing API development
+</div>
+
+<div class="flex justify-center items-center h-full">
+<img src="/nicolascage_pedropascal.gif" class="m-5 h-70 p-2 rounded bg-white" />
+</div>
+
+
+---
+
+# Recipes API
+
+Let's build an API
+
+<div grid="~ cols-2 gap-2" m="-t-2">
+
+<div>
+
+#### Client
+
+</div>
+
+<div>
+
+#### Server
+
+</div>
+
+<div class="max-h-87 overflow-auto">
+
+<img src="/client-ui.png" class="h-60 rounded border-2 border-gray-400" />
+
+<img src="/client-ui-response.png" class="h-130 rounded border-2 border-gray-400" />
+
+</div>
+
+<div>
+
+
+```shell
+curl 'http://localhost:8080/recipes?title=Pumpkin&nutritionFacts=LOW_CALORIE'
+```
+
+```json {all} {maxHeight:'300px'} 
+[
+    {
+        "title": "Pumpkin Soup",
+        "ingredients": [
+            {
+                "name": "Pumpkin",
+                "quantity": 1000.0,
+                "unit": "grams"
+            },
+            {
+                "name": "Onion",
+                "quantity": 1.0,
+                "unit": "unit"
+            },
+            {
+                "name": "Vegetable broth",
+                "quantity": 750.0,
+                "unit": "ml"
+            },
+            {
+                "name": "Cream",
+                "quantity": 100.0,
+                "unit": "ml"
+            },
+            {
+                "name": "Nutmeg",
+                "quantity": 1.0,
+                "unit": "gram"
+            },
+            {
+                "name": "Salt",
+                "quantity": 1.0,
+                "unit": "tablespoon"
+            }
+        ],
+        "preparationTime": 15,
+        "cookingTime": 30,
+        "servings": 4,
+        "instructions": [
+            "Sauté onion until translucent.",
+            "Add pumpkin cubes, vegetable broth, and salt, bring to a boil.",
+            "Simmer until pumpkin is tender.",
+            "Blend until smooth, stir in cream and nutmeg.",
+            "Heat through and serve."
+        ],
+        "nutritionFacts": [
+            "LOW_CALORIE",
+            "CARBS"
+        ]
+    }
+]
+```
+
+</div>
+
+
+</div>
+
+
 
 ---
 
@@ -339,7 +451,7 @@ Communicate API specification once coding has been done
 <div v-click="2">
 
 - **Disadvantages:**
-  - Less flexibility when it comes to changing the API design
+  - Late communication with the consumer
   - Does not enable development in parallel
   - Annotations
 </div>
@@ -427,12 +539,6 @@ Consumer dictates the expected API behavior to the provider
 </div>
 
 ---
-layout: statement
----
-
-# Demo time
-
----
 
 # API Development
 
@@ -444,10 +550,14 @@ layout: statement
 | When to mix & match? | When API first alone is not sufficient to match consumer needs |
 
 ---
-layout: statement
+layout: center
 ---
 
-## **Enhancing API Documentation**
+# Enhancing API Documentation
+
+<div class="flex justify-center items-center h-full">
+<img src="/anakin_padme.png" class="m-5 h-80 p-2 rounded bg-white" />
+</div>
 
 ---
 
@@ -512,6 +622,7 @@ API Specifications can be leveraged to generate more human readable forms of doc
 
 </div>
 
+
 ---
 
 # Summary
@@ -548,4 +659,3 @@ layout: statement
 ---
 
 # Q&A
-

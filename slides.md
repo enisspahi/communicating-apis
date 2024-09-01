@@ -1,7 +1,13 @@
 ---
 title: '**Communcication Our APIs:** Enhance Provider and Consumer Interaction'
-layout: intro
+layout: center
 theme: seriph
+---
+
+<img src="/OpenValue Square.jpg" class="m-5 h-70 p-2 rounded bg-white" />
+
+---
+layout: intro
 ---
 
 ## **Communicating Our APIs:**
@@ -218,7 +224,7 @@ components:
 
 <v-clicks at="0">
 
-- **Version:** Spec Version
+- **Openapi:** Spec Version
 - **Info:** General API information as metadata
 - **Servers:** Connectivity information about target servers
 - **Paths:** Paths to the endpoints with their expected request, response and errors. 
@@ -229,6 +235,7 @@ components:
 </div>
 
 </div>
+
 
 ---
 

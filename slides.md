@@ -1,14 +1,9 @@
 ---
 title: '**Communcication Our APIs:** Enhance Provider and Consumer Interaction'
-layout: center
+layout: statement
 theme: seriph
 ---
 
-<img src="/OpenValue Square.jpg" class="m-5 h-70 p-2 rounded bg-white" />
-
----
-layout: intro
----
 
 ## **Communicating Our APIs:**
 ## Enhance Provider and Consumer Interaction
@@ -43,13 +38,13 @@ Source: Wikipedia, "API"​
 <br>
 <br>
 
-![Local Image](/api-client-server.drawio.png)
+![Local Image](/api-machine-to-machine.drawio.png)
 
 <arrow v-click="1" x1="550" y1="370" x2="550" y2="290" color="#564" width="2" arrowSize="1" />
 <arrow v-click="1" x1="900" y1="370" x2="900" y2="290" color="#564" width="2" arrowSize="1" />
 <br>
 <br>
-<div grid="~ cols-2">
+<div grid="~ cols-2 grid-rows-2">
 
 <div v-click="1" color="#564">
 
@@ -63,9 +58,16 @@ Source: Wikipedia, "API"​
 
 </div>
 
+
+<div v-click="1">
+<AutoFitText :max="40" :min="40" modelValue="🙂"/>
 </div>
 
+<div v-click="1" class="right-0 flex justify-end">
+<AutoFitText :max="40" :min="40" modelValue="🙂"/>
+</div>
 
+</div>
 
 </div>
 
@@ -73,7 +75,7 @@ Source: Wikipedia, "API"​
 
 ---
 
-# Communication Boundaries
+# Boundaries
 
 <br>
 
@@ -94,7 +96,7 @@ Source: Wikipedia, "API"​
 
 ---
 
-# Communication Challenges
+# Statistics
 
 Top 3 Obstacles to consuming APIs
 
@@ -122,6 +124,31 @@ Source: Postman, "2023 State of the API Report"​​​
 </div>
 
 ---
+
+# API Communication
+
+<div grid="~ cols-2 grid-rows-2 gap-5" >
+
+<div class="row-span-1 col-span-2 flex justify-center h-full">
+<img src="/api-client-server.drawio.png" class="m-5 h-50 p-2 rounded bg-white" />
+</div>
+
+<div class="flex justify-center items-center">
+<AutoFitText :max="50" :min="50" modelValue="🙂"/>
+<AutoFitText :max="50" :min="50" modelValue="🤦‍♀️"/>
+<AutoFitText :max="50" :min="50" modelValue="😱"/>
+<AutoFitText :max="50" :min="50" modelValue="😡"/>
+</div>
+
+<div class="flex justify-center items-center">
+<AutoFitText :max="50" :min="50" modelValue="🤯"/>
+<AutoFitText :max="80" :min="50" modelValue="🤔"/>
+</div>
+
+
+</div>
+
+---
 layout: center
 ---
 
@@ -131,38 +158,25 @@ layout: center
 <img src="/ibet.png" class="m-5 h-80 p-2 rounded bg-white" />
 </div>
 
-
+---
+layout: center
 ---
 
-# API Specifications
-
-<div grid="~ cols-2 gap-10">
-
-<div>
-
-<img src="/api-human2human.drawio.png" class="m-5 h-80 p-2 rounded bg-white" />
-
-</div>
-
-<div>
+# Find a common language
 
 <br>
 
+<div grid="~ cols-1 grid-rows-2 gap-2" >
 
-- Specification language for the APIs
-  - OpenAPI/Swagger for REST APIs
-  - AsyncAPI for message-driven APIs
-  - WSDL for SOAP Web Services
-  - GraphQL Schema for GraphQL
-  - GRPC
-- Standard for API discovery
-- Foundation for documentation
+<div class="flex justify-center h-full">
+<img src="/openapi.webp" class="m-5 h-20 p-2 rounded bg-white" />
+</div>
 
+<div class="flex justify-center h-full">
+<img src="/asyncapi.png" class="m-5 h-20 p-2 rounded bg-white" />
 </div>
 
 </div>
-
-<!-- API Spec define the functions and the expected results of an API -->
 
 ---
 
@@ -326,6 +340,40 @@ components:
 
 </div>
 
+---
+
+# Standardized API Communication
+
+<br>
+<br>
+<br>
+
+<div grid="~ cols-2 gap-10">
+
+<div>
+
+<img src="/api-human2human.drawio.png" class="m-5 h-60 p-2 rounded bg-white" />
+
+</div>
+
+<div>
+
+<br>
+
+
+- Common Language for API discovery
+  - OpenAPI/Swagger for REST APIs
+  - AsyncAPI for message-driven APIs
+- Foundation for tooling
+  - Code generation
+  - Documentation
+- Community
+
+</div>
+
+</div>
+
+<!-- API Spec define the functions and the expected results of an API -->
 
 ---
 layout: center
@@ -343,9 +391,10 @@ layout: center
 
 ---
 
-# Recipes API
+# Demo Time
 
-Let's build an API
+Let's build a Recipes API
+
 
 <div grid="~ cols-2 gap-2" m="-t-2">
 
@@ -443,34 +492,36 @@ curl 'http://localhost:8080/recipes?title=Pumpkin&nutritionFacts=LOW_CALORIE'
 
 Communicate API specification once coding has been done
 
-<div grid="~ cols-2 gap-10">
+<br>
 
-<div>
-
-<div v-click="1">
-
-- **Advantages:**
-  - Focus on coding
-  - Flexibility to change the API design
-
+<div class="flex justify-center h-full">
+<img src="/api-code-first.drawio.png" class="m-5 h-70 p-2 rounded bg-white" />
 </div>
 
-<div v-click="2">
+---
 
-- **Disadvantages:**
-  - Late communication with the consumer
-  - Does not enable development in parallel
-  - Annotations
-</div>
+# API Development - Code First
 
-</div>
+Communicate API specification once coding has been done
 
-<div>
+<br>
 
-<img src="/api-code-first.drawio.png" class="p-2 rounded bg-white" />
+| **Advantages** | **Disadvantages** |
+| ------------- |-------------|
+| Focus on coding | Late communication with the consumer |
+| Flexibility to change the API design | Does not enable development in parallel      |
+|  | Annotations      |
 
-</div>
+---
 
+# API Development - API First
+
+Communicate API specification before coding. Prioritizes API design over implementation.
+
+<br>
+
+<div class="flex justify-center h-full">
+<img src="/api-api-first.drawio.png" class="m-5 h-70 p-2 rounded bg-white" />
 </div>
 
 ---
@@ -479,35 +530,13 @@ Communicate API specification once coding has been done
 
 Communicate API specification before coding. Prioritizes API design over implementation.
 
-<div grid="~ cols-2 gap-10">
+<br>
 
-<div>
-
-<div v-click="1">
-
-- **Advantages:**
-  - Early communication with the consumer
-  - Documentation thought ahead
-  - Enables development in parallel
-
-</div>
-
-<div v-click="2">
-
-- **Disadvantages:**
-  - Less flexibility to change the API design
-  - Sometimes bureaucratic for providers
-</div>
-
-</div>
-
-<div>
-
-<img src="/api-api-first.drawio.png" class="p-2 rounded bg-white" />
-
-</div>
-
-</div>
+| **Advantages** | **Disadvantages** |
+| ------------- |-------------|
+| Early communication with the consumer | Less flexibility to change the API design |
+| Documentation thought ahead | Sometimes bureaucratic for providers |
+| Enables development in parallel |  |
 
 ---
 
@@ -518,6 +547,8 @@ Consumer dictates the expected API behavior to the provider
 <div grid="~ cols-2 gap-10">
 
 <div>
+
+<br>
 
 <div v-click="1">
 
@@ -539,7 +570,10 @@ Consumer dictates the expected API behavior to the provider
 
 <div>
 
-<img src="/api-consumer-contracts.drawio.png" class="p-2 rounded bg-white" />
+<br>
+<br>
+
+<img src="/api-consumer-contracts.drawio.png" class="h-50 rounded bg-white" />
 
 </div>
 
@@ -547,7 +581,7 @@ Consumer dictates the expected API behavior to the provider
 
 ---
 
-# API Development
+# Which methodology is the right one for me?
 
 |     |     |
 | --- | --- |
@@ -555,6 +589,21 @@ Consumer dictates the expected API behavior to the provider
 | When to use API first? | API design over implementation <br> Early communication with the consumer → Documentation <br> Utilize code generation <br> Large number of consumers |
 | When to use Consumer first? | Provider should conform to consumer needs <br> API consumer and provider test their applications independently <br> To sync provider and consumer deployments <br> Small number of consumers |
 | When to mix & match? | When API first alone is not sufficient to match consumer needs |
+
+---
+layout: center
+---
+
+# Are same approaches applicable to AsyncAPI?
+
+<div v-click="1" class="flex justify-center items-center">
+
+- Inspired by OpenAPI
+- Code First and API First
+- Pact Messaging support
+- [https://www.asyncapi.com/tools](https://www.asyncapi.com/tools)
+
+</div>
 
 ---
 layout: center
@@ -636,8 +685,8 @@ API Specifications can be leveraged to generate more human readable forms of doc
 
 |     |     |
 | --- | --- |
-| Enhancing API Discoverability | Standardized language, common understanding <br> <ul><li>OpenAPI, AsyncAPI, ...</li></ul>  |
-| Enhancing API development | API Development methodology <br> <ul><li>Code first, API first, Consumer first, mix & match</li></ul>  Speed up development <br> <ul><li>OpenAPI Generator, Pact, Swagger-validator</li></ul> |
+| Enhancing API Discoverability | Speak common language <br> <ul><li>OpenAPI, AsyncAPI, ...</li></ul>  |
+| Enhancing API development | Pick the right methodology <br> <ul><li>Code first, API first, Consumer first, mix & match</li></ul>  Speed up development <br> <ul><li>OpenAPI Generator, Pact, Swagger-validator</li></ul> |
 | Enhancing API Documentation | API Specification → API Reference → API Docs <br> Stay up-to-date with Continuous Documentation |
 
 ---

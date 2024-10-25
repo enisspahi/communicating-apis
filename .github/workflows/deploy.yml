@@ -31,11 +31,11 @@ jobs:
       - name: Install dependencies
         run: nci
 
-      - name: Build
-        run: nr build --base /${{github.event.repository.name}}/
-
       - name: Install Slidev
         run: npm install @slidev/cli@0.45.0
+                
+      - name: Build
+        run: nr build --base /${{github.event.repository.name}}/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

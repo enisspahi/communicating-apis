@@ -35,7 +35,7 @@ jobs:
         run: nci
 
       - name: Build
-        run: slidev build
+        run: nr build --base /${{github.event.repository.name}}/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

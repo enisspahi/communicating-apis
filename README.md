@@ -17,4 +17,4 @@
 [https://github.com/enisspahi/async-api-example](https://github.com/enisspahi/async-api-example)
 
 ## **Slides**
-[TBD](TBD)
+[https://enisspahi.github.io/communicating-apis](https://enisspahi.github.io/communicating-apis)

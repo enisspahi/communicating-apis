@@ -232,7 +232,7 @@ clicks: 5
 
 <div>
 
-```yaml {all|1|2-4|5-6|7-22|23-}  {maxHeight:'400px'} 
+```yaml {all|1|2-4|5-6|7-22|23-}{maxHeight:'400px'} 
 openapi: 3.0.3
 info:
   title: Recipes API
@@ -304,7 +304,7 @@ clicks: 5
 
 <div>
 
-```yaml {all|1|2-4|6-10|12-24|26-}  {maxHeight:'400px'} 
+```yaml {all|1|2-4|6-10|12-24|26-}{maxHeight:'400px'} 
 asyncapi: 2.0.0
 info:
   title: Ping Service
@@ -454,7 +454,7 @@ Let's build a Recipes API
 curl 'http://localhost:8080/recipes?title=Pumpkin&nutritionFacts=LOW_CALORIE'
 ```
 
-```json {all} {maxHeight:'300px'} 
+```json {all}{maxHeight:'300px'} 
 [
     {
         "title": "Pumpkin Soup",

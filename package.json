@@ -8,8 +8,8 @@
     },
     "dependencies": {
         "@slidev/cli": "^0.45.0",
-        "@slidev/theme-default": "^0.45.0",
-        "@slidev/theme-seriph": "^0.45.0"
+        "@slidev/theme-default": "*",
+        "@slidev/theme-seriph": "*"
     },
     "devDependencies": {
         "@iconify-json/ri": "^1.2.2"

@@ -1,16 +1,15 @@
 ---
-title: '**Communcication Our APIs:** Enhance Provider and Consumer Interaction'
-layout: statement
+title: 'Communcicating Our APIs: Enhance Provider and Consumer Interaction'
+layout: cover
 theme: seriph
+background: background.png
+author: Enis Spahi
+presenter: true
 ---
-
-
 ## **Communicating Our APIs:**
 ## Enhance Provider and Consumer Interaction
-
 <br>
-
-Enis Spahi (@enisspahi)
+Enis Spahi
 
 ---
 clicks: 1
@@ -42,6 +41,7 @@ Source: Wikipedia, "API"​
 
 <arrow v-click="1" x1="550" y1="370" x2="550" y2="290" color="#564" width="2" arrowSize="1" />
 <arrow v-click="1" x1="900" y1="370" x2="900" y2="290" color="#564" width="2" arrowSize="1" />
+
 <br>
 <br>
 <div grid="~ cols-2 grid-rows-2">
@@ -72,6 +72,35 @@ Source: Wikipedia, "API"​
 </div>
 
 </div>
+
+---
+layout: intro
+---
+
+# About me
+
+<img src="https://gravatar.com/avatar/9c891fc2c3c17bb8cc0ecd7848e144a7?s=300" class="rounded-full w-40 border-2 border-gray-400 abs-tr mt-35 mr-35"/>
+
+
+Consultant Architect at OpenValue
+
+<div class="my-10 flex flex-col gap-y-4">
+  <div class="flex items-center">
+    <ri-github-fill class="mr-2"/>
+    <a href="https://github.com/enisspahi" target="_blank">enisspahi</a>
+  </div>
+  <div class="flex items-center">
+    <ri-mail-send-line class="mr-2"/>
+    <a href="mailto:enis@openvalue.de" target="_blank">enis@openvalue.de</a>
+  </div>
+  <div class="flex items-center">
+    <ri-linkedin-fill class="mr-2"/>
+    <a href="https://www.linkedin.com/in/enisspahi/" target="_blank">enisspahi</a>
+  </div>  
+</div>
+
+
+
 
 ---
 
@@ -596,6 +625,9 @@ layout: center
 
 # Are same approaches applicable to AsyncAPI?
 
+<br>
+<br>
+
 <div v-click="1" class="flex justify-center items-center">
 
 - Inspired by OpenAPI
@@ -681,7 +713,7 @@ API Specifications can be leveraged to generate more human readable forms of doc
 
 ---
 
-# Summary
+# Recap
 
 |     |     |
 | --- | --- |
@@ -690,28 +722,19 @@ API Specifications can be leveraged to generate more human readable forms of doc
 | Enhancing API Documentation | API Specification → API Reference → API Docs <br> Stay up-to-date with Continuous Documentation |
 
 ---
-layout: statement
+layout: center
 ---
 
-## **OpenValue Blog**
+# Thank you for your attention!
 
-[https://openvalue.blog/posts/2023/11/25/communicating_our_apis_part1/](https://openvalue.blog/posts/2023/11/25/communicating_our_apis_part1/)
+<br>
 
-[https://openvalue.blog/posts/2023/11/26/communicating_our_apis_part2/](https://openvalue.blog/posts/2023/11/26/communicating_our_apis_part2/)
-
-## **Code Samples**
-
-[https://github.com/enisspahi/code-first-api-example](https://github.com/enisspahi/code-first-api-example)
-
-[https://github.com/enisspahi/contract-first-api-example](https://github.com/enisspahi/contract-first-api-example)
-
-[https://github.com/enisspahi/consumer-first-api-example](https://github.com/enisspahi/consumer-first-api-example)
-
-[https://github.com/enisspahi/async-api-example](https://github.com/enisspahi/async-api-example)
+<div class="flex justify-center items-center">
+<img src="/qr.png" class="flex h-50" />
+</div>
+<div class="flex justify-center items-center">
+Feel free to scan
+</div>
 
 
----
-layout: statement
----
 
-# Q&A

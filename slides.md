@@ -12,7 +12,7 @@ presenter: true
 Enis Spahi
 
 ---
-clicks: 1
+clicks: 2
 ---
 
 # APIs
@@ -44,7 +44,7 @@ Source: Wikipedia, "API"​
 
 <br>
 <br>
-<div grid="~ cols-2 grid-rows-2">
+<div grid="~ cols-2 grid-rows-3">
 
 <div v-click="1" color="#564">
 
@@ -59,12 +59,20 @@ Source: Wikipedia, "API"​
 </div>
 
 
-<div v-click="1">
-<AutoFitText :max="40" :min="40" modelValue="🙂"/>
+<div v-click="[1, 2]" class="abs-tr mt-100 mr-100">
+<AutoFitText :max="50" :min="50" modelValue="🙂"/>
 </div>
 
-<div v-click="1" class="right-0 flex justify-end">
-<AutoFitText :max="40" :min="40" modelValue="🙂"/>
+<div v-click="[1, 2]" class="abs-tr mt-100 mr-15">
+<AutoFitText :max="50" :min="50" modelValue="🙂"/>
+</div>
+
+<div v-click="2" class="abs-tr mt-100 mr-80">
+<AutoFitText :max="50" :min="50" modelValue="🙂🤦‍♀️😱😡"/>
+</div>
+
+<div v-click="2" class="abs-tr mt-100 mr-15">
+<AutoFitText :max="50" :min="50" modelValue="🤯🤔"/>
 </div>
 
 </div>
@@ -74,33 +82,31 @@ Source: Wikipedia, "API"​
 </div>
 
 ---
-layout: intro
----
+
+<br>
+<br>
+<br>
 
 # About me
-
-<img src="https://gravatar.com/avatar/9c891fc2c3c17bb8cc0ecd7848e144a7?s=300" class="rounded-full w-40 border-2 border-gray-400 abs-tr mt-35 mr-35"/>
-
 
 Consultant Architect at OpenValue
 
 <div class="my-10 flex flex-col gap-y-4">
   <div class="flex items-center">
-    <ri-github-fill class="mr-2"/>
-    <a href="https://github.com/enisspahi" target="_blank">enisspahi</a>
-  </div>
-  <div class="flex items-center">
     <ri-mail-send-line class="mr-2"/>
     <a href="mailto:enis@openvalue.de" target="_blank">enis@openvalue.de</a>
   </div>
   <div class="flex items-center">
+    <ri-github-fill class="mr-2"/>
+    <a href="https://github.com/enisspahi" target="_blank">enisspahi</a>
+  </div>
+  <div class="flex items-center">
     <ri-linkedin-fill class="mr-2"/>
     <a href="https://www.linkedin.com/in/enisspahi/" target="_blank">enisspahi</a>
-  </div>  
+  </div> 
 </div>
 
-
-
+<img src="https://gravatar.com/avatar/9c891fc2c3c17bb8cc0ecd7848e144a7?s=300" class="rounded-full w-40 border-2 border-gray-400 abs-tr mt-35 mr-35"/>
 
 ---
 
@@ -147,31 +153,6 @@ Top 3 Obstacles to consuming APIs
 
 ![Obstacles](/postman_soar_obstacles.png)
 Source: Postman, "2023 State of the API Report"​​​
-</div>
-
-
-</div>
-
----
-
-# API Communication
-
-<div grid="~ cols-2 grid-rows-2 gap-5" >
-
-<div class="row-span-1 col-span-2 flex justify-center h-full">
-<img src="/api-client-server.drawio.png" class="m-5 h-50 p-2 rounded bg-white" />
-</div>
-
-<div class="flex justify-center items-center">
-<AutoFitText :max="50" :min="50" modelValue="🙂"/>
-<AutoFitText :max="50" :min="50" modelValue="🤦‍♀️"/>
-<AutoFitText :max="50" :min="50" modelValue="😱"/>
-<AutoFitText :max="50" :min="50" modelValue="😡"/>
-</div>
-
-<div class="flex justify-center items-center">
-<AutoFitText :max="50" :min="50" modelValue="🤯"/>
-<AutoFitText :max="80" :min="50" modelValue="🤔"/>
 </div>
 
 
@@ -521,25 +502,41 @@ curl 'http://localhost:8080/recipes?title=Pumpkin&nutritionFacts=LOW_CALORIE'
 
 Communicate API specification once coding has been done
 
+<div grid="~ cols-2 gap-10">
+
+<div>
+
 <br>
 
-<div class="flex justify-center h-full">
-<img src="/api-code-first.drawio.png" class="m-5 h-70 p-2 rounded bg-white" />
+<div v-click="1">
+
+- **Advantages:**
+  - Focus on coding
+  - Flexibility to change the API design
+
 </div>
 
----
+<div v-click="2">
 
-# API Development - Code First
+- **Disadvantages:**
+  - Late communication with the consumer
+  - Does not enable development in parallel
+  - Annotations
+</div>
 
-Communicate API specification once coding has been done
+</div>
+
+<div>
 
 <br>
+<br>
 
-| **Advantages** | **Disadvantages** |
-| ------------- |-------------|
-| Focus on coding | Late communication with the consumer |
-| Flexibility to change the API design | Does not enable development in parallel      |
-|  | Annotations      |
+<img src="/api-code-first.drawio.png" class="h-50 rounded bg-white" />
+
+</div>
+
+</div>
+
 
 ---
 
@@ -547,25 +544,42 @@ Communicate API specification once coding has been done
 
 Communicate API specification before coding. Prioritizes API design over implementation.
 
+
+<div grid="~ cols-2 gap-10">
+
+<div>
+
 <br>
 
-<div class="flex justify-center h-full">
-<img src="/api-api-first.drawio.png" class="m-5 h-70 p-2 rounded bg-white" />
+<div v-click="1">
+
+- **Advantages:**
+  - Early communication with the consumer
+  - Documentation thought ahead
+  - Enables development in parallel
+
 </div>
 
----
+<div v-click="2">
 
-# API Development - API First
+- **Disadvantages:**
+  - Less flexibility to change the API design
+  - Sometimes bureaucratic for providers
+</div>
 
-Communicate API specification before coding. Prioritizes API design over implementation.
+</div>
+
+<div>
 
 <br>
+<br>
 
-| **Advantages** | **Disadvantages** |
-| ------------- |-------------|
-| Early communication with the consumer | Less flexibility to change the API design |
-| Documentation thought ahead | Sometimes bureaucratic for providers |
-| Enables development in parallel |  |
+<img src="/api-api-first.drawio.png" class="h-52 rounded bg-white" />
+
+</div>
+
+</div>
+
 
 ---
 
@@ -610,7 +624,7 @@ Consumer dictates the expected API behavior to the provider
 
 ---
 
-# Which methodology is the right one for me?
+# The right methodology for me?
 
 |     |     |
 | --- | --- |
@@ -625,7 +639,6 @@ layout: center
 
 # Are same approaches applicable to AsyncAPI?
 
-<br>
 <br>
 
 <div v-click="1" class="flex justify-center items-center">

@@ -2,7 +2,7 @@
 title: 'Communcicating Our APIs: Enhance Provider and Consumer Interaction'
 layout: cover
 theme: seriph
-background: background.png
+# background: background.png
 author: Enis Spahi
 presenter: true
 ---
@@ -391,20 +391,16 @@ layout: center
 
 <div class="flex justify-center items-center h-full">
 
-# Enhancing API development
+# Enhancing API Development
 </div>
 
 <div class="flex justify-center items-center h-full">
-<img src="/nicolascage_pedropascal.gif" class="m-5 h-70 p-2 rounded bg-white" />
+<img src="/98swad.gif" class="m-5 h-70 p-2 rounded bg-white" />
 </div>
-
 
 ---
 
-# Demo Time
-
-Let's build a Recipes API
-
+# Recipes API
 
 <div grid="~ cols-2 gap-2" m="-t-2">
 
@@ -420,11 +416,11 @@ Let's build a Recipes API
 
 </div>
 
-<div class="max-h-87 overflow-auto">
+<div class="max-h-95 overflow-auto">
 
-<img src="/client-ui.png" class="h-60 rounded border-2 border-gray-400" />
+<img src="/client-ui.png" class="h-61 rounded border-2 border-gray-400" />
 
-<img src="/client-ui-response.png" class="h-130 rounded border-2 border-gray-400" />
+<img src="/client-ui-response.png" class="h-131 rounded border-2 border-gray-400" />
 
 </div>
 
@@ -435,7 +431,7 @@ Let's build a Recipes API
 curl 'http://localhost:8080/recipes?title=Pumpkin&nutritionFacts=LOW_CALORIE'
 ```
 
-```json {all}{maxHeight:'300px'} 
+```json {all}{maxHeight:'335px'} 
 [
     {
         "title": "Pumpkin Soup",
@@ -493,8 +489,6 @@ curl 'http://localhost:8080/recipes?title=Pumpkin&nutritionFacts=LOW_CALORIE'
 
 
 </div>
-
-
 
 ---
 
@@ -624,7 +618,7 @@ Consumer dictates the expected API behavior to the provider
 
 ---
 
-# The right methodology for me?
+# The right methodology?
 
 |     |     |
 | --- | --- |
@@ -746,7 +740,8 @@ layout: center
 <img src="/qr.png" class="flex h-50" />
 </div>
 <div class="flex justify-center items-center">
-Feel free to scan
+
+[https://github.com/enisspahi/communicating-apis](https://github.com/enisspahi/communicating-apis)
 </div>
 
 

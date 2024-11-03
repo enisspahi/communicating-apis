@@ -1,4 +1,4 @@
-# Communcicating Our APIs:** Enhance Provider and Consumer Interaction
+# **Communcicating Our APIs:** Enhance Provider and Consumer Interaction
 
 ## **Blog**
 
